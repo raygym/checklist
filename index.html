@@ -18,7 +18,6 @@
     background-size:40px 40px;}
   .container{max-width:880px;margin:0 auto;padding:24px 16px;position:relative;z-index:1;}
 
-  /* HEADER */
   .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:10px;}
   .logo{display:flex;align-items:baseline;gap:10px;}
   .logo-mark{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);border:1px solid var(--accent);padding:2px 6px;border-radius:4px;letter-spacing:2px;}
@@ -27,22 +26,18 @@
   .mode-badge.admin{background:rgba(255,180,0,0.15);color:#ffb400;border:1px solid rgba(255,180,0,0.3);}
   .mode-badge.viewer{background:rgba(0,229,160,0.1);color:var(--accent);border:1px solid rgba(0,229,160,0.3);}
 
-  /* TABS */
   .tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:4px;margin-bottom:24px;flex-wrap:wrap;}
   .tab-btn{flex:1;min-width:80px;padding:10px 8px;border:none;background:transparent;color:var(--muted);border-radius:8px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:500;transition:all 0.2s;white-space:nowrap;}
   .tab-btn.active{background:var(--surface2);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,0.4);}
   .tab-btn:hover:not(.active){color:var(--text);}
 
-  /* DATE NAV */
   .date-nav{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
   .date-nav button{background:var(--surface);border:1px solid var(--border);color:var(--text);width:36px;height:36px;border-radius:8px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all 0.15s;}
   .date-nav button:hover{background:var(--surface2);border-color:var(--accent);}
   .date-display{flex:1;font-family:'DM Mono',monospace;font-size:14px;color:var(--accent);text-align:center;}
 
-  /* CARD */
   .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:12px;}
 
-  /* CHECK ITEM */
   .check-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--border);transition:opacity 0.2s;}
   .check-item:last-child{border-bottom:none;padding-bottom:0;}
   .check-item.done{opacity:0.45;}
@@ -55,52 +50,43 @@
   .check-desc{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.5;}
   .check-sub{margin-top:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
   .check-meta{font-size:11px;color:var(--muted);font-family:'DM Mono',monospace;}
-  .check-photo{margin-top:8px;max-width:180px;border-radius:8px;border:1px solid var(--border);cursor:pointer;}
+  .check-photo{margin-top:8px;max-width:180px;border-radius:8px;border:1px solid var(--border);cursor:pointer;display:block;}
   .check-photo:hover{border-color:var(--accent);}
 
-  /* BADGES */
   .badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-family:'DM Mono',monospace;padding:2px 8px;border-radius:10px;letter-spacing:0.5px;white-space:nowrap;}
   .badge.daily{background:rgba(0,229,160,0.12);color:var(--accent);border:1px solid rgba(0,229,160,0.25);}
   .badge.weekly{background:rgba(0,102,255,0.12);color:#4d99ff;border:1px solid rgba(0,102,255,0.25);}
   .badge.once{background:rgba(255,180,0,0.1);color:#ffb400;border:1px solid rgba(255,180,0,0.2);}
-  /* ASSIGNEE BADGES */
   .badge.am{background:rgba(255,180,0,0.13);color:#ffcc44;border:1px solid rgba(255,180,0,0.3);}
   .badge.pm{background:rgba(0,180,255,0.13);color:#44ccff;border:1px solid rgba(0,180,255,0.3);}
   .badge.deadline{background:rgba(255,68,68,0.13);color:#ff7777;border:1px solid rgba(255,68,68,0.3);}
   .badge.weekend{background:rgba(160,100,255,0.13);color:#bb88ff;border:1px solid rgba(160,100,255,0.3);}
   .badge.etc{background:rgba(150,150,150,0.13);color:#aaa;border:1px solid rgba(150,150,150,0.3);}
 
-  /* GROUP TITLE */
   .group-title{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-family:'DM Mono',monospace;padding:10px 0 4px;border-bottom:1px solid var(--border);}
 
-  /* ITEM ACTIONS */
   .item-actions{display:flex;gap:5px;flex-shrink:0;}
   .icon-btn{background:transparent;border:1px solid var(--border);color:var(--muted);width:28px;height:28px;border-radius:6px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;transition:all 0.15s;}
   .icon-btn:hover{color:var(--text);border-color:#555;}
   .icon-btn.danger:hover{color:var(--warn);border-color:var(--warn);}
 
-  /* PROGRESS */
   .progress-wrap{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
   .progress-bar{flex:1;height:6px;background:var(--surface2);border-radius:3px;overflow:hidden;}
   .progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:3px;transition:width 0.4s cubic-bezier(0.34,1.56,0.64,1);}
   .progress-label{font-family:'DM Mono',monospace;font-size:12px;color:var(--accent);min-width:50px;text-align:right;}
 
-  /* SECTION TITLE */
   .section-title{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
   .section-title::after{content:'';flex:1;height:1px;background:var(--border);}
 
-  /* PHOTO EXPAND MODAL */
-  .photo-modal{position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:200;display:flex;align-items:center;justify-content:center;cursor:pointer;}
-  .photo-modal img{max-width:90vw;max-height:90vh;border-radius:12px;}
+  .photo-modal{position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:200;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+  .photo-modal img{max-width:92vw;max-height:92vh;border-radius:12px;}
 
-  /* COMMENTS */
   .comment-item{background:var(--surface2);border-radius:8px;padding:12px 14px;margin-bottom:8px;border-left:3px solid var(--accent2);}
   .comment-author{font-size:11px;color:var(--accent2);font-family:'DM Mono',monospace;margin-bottom:4px;}
   .comment-text{font-size:13px;line-height:1.6;}
   .comment-date{font-size:10px;color:var(--muted);margin-top:4px;font-family:'DM Mono',monospace;}
   .comment-image{margin-top:8px;max-width:100%;border-radius:6px;border:1px solid var(--border);cursor:pointer;}
 
-  /* FORM */
   .field{margin-bottom:12px;}
   .field label{display:block;font-size:11px;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase;font-weight:500;}
   input[type="text"],textarea,input[type="password"],select{
@@ -110,7 +96,6 @@
   select option{background:var(--surface2);}
   textarea{resize:vertical;min-height:72px;line-height:1.6;}
 
-  /* ASSIGNEE CHIPS */
   .assignee-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
   .assign-chip{padding:5px 12px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-family:'Noto Sans KR',sans-serif;transition:all 0.15s;}
   .assign-chip:hover{border-color:#555;color:var(--text);}
@@ -120,13 +105,11 @@
   .assign-chip.sel-weekend{background:rgba(160,100,255,0.2);border-color:#bb88ff;color:#bb88ff;}
   .assign-chip.sel-etc{background:rgba(150,150,150,0.2);border-color:#aaa;color:#aaa;}
 
-  /* DAYS PICKER */
   .days-picker{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
   .day-chip{width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-family:'Noto Sans KR',sans-serif;display:flex;align-items:center;justify-content:center;transition:all 0.15s;}
   .day-chip.selected{background:var(--accent2);border-color:var(--accent2);color:#fff;font-weight:700;}
   .day-chip:hover:not(.selected){border-color:var(--accent2);color:var(--text);}
 
-  /* BUTTONS */
   .btn{padding:10px 20px;border-radius:8px;border:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:600;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px;}
   .btn-primary{background:var(--accent);color:#000;}
   .btn-primary:hover{background:#00ffb3;transform:translateY(-1px);}
@@ -135,40 +118,30 @@
   .btn-danger{background:rgba(255,68,68,0.1);color:var(--warn);border:1px solid rgba(255,68,68,0.3);}
   .btn-sm{padding:6px 12px;font-size:12px;}
 
-  /* FILE UPLOAD */
-  .file-label{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--surface2);border:1px dashed var(--border);border-radius:8px;cursor:pointer;font-size:12px;color:var(--muted);transition:all 0.2s;}
-  .file-label:hover{border-color:var(--accent);color:var(--accent);}
+  /* UPLOAD BUTTON */
+  .upload-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--surface2);border:1px dashed var(--border);border-radius:8px;cursor:pointer;font-size:12px;color:var(--muted);transition:all 0.2s;font-family:'Noto Sans KR',sans-serif;}
+  .upload-btn:hover{border-color:var(--accent);color:var(--accent);}
+  .upload-btn.loading{border-color:var(--accent2);color:var(--accent2);cursor:wait;}
   input[type="file"]{display:none;}
-  .file-preview{margin-top:8px;max-width:120px;border-radius:6px;border:1px solid var(--border);}
 
-  /* ITEM PHOTO UPLOAD */
-  .item-photo-wrap{margin-top:8px;}
-  .item-photo-preview{max-width:100px;border-radius:6px;border:1px solid var(--border);margin-top:6px;}
+  /* UPLOAD PROGRESS */
+  .upload-progress{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--accent2);font-family:'DM Mono',monospace;margin-top:6px;}
+  .upload-spinner{width:12px;height:12px;border:2px solid var(--border);border-top-color:var(--accent2);border-radius:50%;animation:spin 0.8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
 
-  /* HISTORY */
-  .history-date{font-family:'DM Mono',monospace;font-size:13px;color:var(--accent);padding:8px 0 6px;border-bottom:1px solid var(--border);margin-bottom:10px;}
-  .history-item{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:13px;}
-  .history-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-  .history-dot.done{background:var(--accent);}
-  .history-dot.pending{background:var(--border);}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto;}
+  .modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;width:100%;max-width:440px;max-height:90vh;overflow-y:auto;}
+  .modal h3{font-size:16px;margin-bottom:18px;}
 
-  /* LOGIN */
   #loginScreen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
   .login-box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:36px;width:100%;max-width:380px;text-align:center;}
   .login-icon{font-size:40px;margin-bottom:16px;}
   .login-box h2{font-size:20px;margin-bottom:6px;}
   .login-box p{font-size:13px;color:var(--muted);margin-bottom:24px;}
 
-  /* MODAL */
-  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto;}
-  .modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;width:100%;max-width:440px;max-height:90vh;overflow-y:auto;}
-  .modal h3{font-size:16px;margin-bottom:18px;}
-
-  /* EMPTY */
   .empty{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;}
   .empty .emoji{font-size:32px;margin-bottom:10px;}
 
-  /* TOAST */
   #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--surface);border:1px solid var(--accent);color:var(--accent);padding:10px 20px;border-radius:20px;font-size:13px;font-family:'DM Mono',monospace;z-index:999;transition:transform 0.3s;white-space:nowrap;}
   #toast.show{transform:translateX(-50%) translateY(0);}
 
@@ -202,14 +175,8 @@
 <div id="editModal" class="modal-overlay hidden">
   <div class="modal">
     <h3>✏️ 항목 편집</h3>
-    <div class="field">
-      <label>항목 이름</label>
-      <input type="text" id="editName">
-    </div>
-    <div class="field">
-      <label>업무 설명</label>
-      <textarea id="editDesc" placeholder="업무 내용, 주의사항 등을 적어두세요..."></textarea>
-    </div>
+    <div class="field"><label>항목 이름</label><input type="text" id="editName"></div>
+    <div class="field"><label>업무 설명</label><textarea id="editDesc" placeholder="업무 내용, 주의사항 등..."></textarea></div>
     <div class="field">
       <label>담당 시간대</label>
       <div class="assignee-chips" id="editAssignChips">
@@ -221,11 +188,20 @@
       </div>
     </div>
     <div class="field">
+      <label>항목 참고 사진</label>
+      <label class="upload-btn" id="editPhotoBtn">
+        📷 사진 선택 (Cloudinary 업로드)
+        <input type="file" accept="image/*" onchange="uploadToCloudinary(this,'editItemPhoto','editPhotoBtn','editPhotoPreview')">
+      </label>
+      <div id="editPhotoProgress" class="upload-progress hidden"><div class="upload-spinner"></div> 업로드 중...</div>
+      <img id="editPhotoPreview" class="check-photo hidden" style="max-width:100px;margin-top:8px;" alt="">
+    </div>
+    <div class="field">
       <label>반복 설정</label>
       <select id="editRepeatSel" onchange="onEditRepeatChange()">
         <option value="once">🔸 반복 없음 (1회)</option>
         <option value="daily">🔁 매일 반복</option>
-        <option value="weekly">📅 매주 반복 (요일 지정)</option>
+        <option value="weekly">📅 매주 반복</option>
       </select>
     </div>
     <div id="editWeekdayPicker" class="field hidden">
@@ -252,7 +228,7 @@
 </div>
 
 <!-- PHOTO EXPAND -->
-<div id="photoModal" class="photo-modal hidden" onclick="document.getElementById('photoModal').classList.add('hidden')">
+<div id="photoModal" class="photo-modal hidden" onclick="this.classList.add('hidden')">
   <img id="photoModalImg" src="" alt="">
 </div>
 
@@ -301,9 +277,14 @@
         <div class="field"><label>작성자 이름</label><input type="text" id="commentAuthor" placeholder="이름을 입력하세요"></div>
         <div class="field"><label>내용</label><textarea id="commentText" placeholder="오늘 업무에 대한 코멘트나 메모를 남기세요..."></textarea></div>
         <div class="field">
-          <label>사진 첨부 (선택)</label>
-          <label class="file-label">📎 사진 선택<input type="file" accept="image/*" id="commentImage" onchange="previewCommentImage(this)"></label>
-          <img id="commentImagePreview" class="file-preview hidden" alt="">
+          <label>사진 첨부 (Cloudinary 자동 업로드)</label>
+          <label class="upload-btn" id="commentPhotoBtn">
+            📎 사진 선택
+            <input type="file" accept="image/*" onchange="uploadToCloudinary(this,'commentPhotoUrl','commentPhotoBtn','commentPhotoPreview')">
+          </label>
+          <div id="commentPhotoProgress" class="upload-progress hidden"><div class="upload-spinner"></div> 업로드 중...</div>
+          <img id="commentPhotoPreview" class="file-preview hidden" style="max-width:120px;margin-top:8px;border-radius:6px;border:1px solid var(--border);" alt="">
+          <input type="hidden" id="commentPhotoUrl">
         </div>
         <button class="btn btn-primary" onclick="addComment()">💬 코멘트 올리기</button>
       </div>
@@ -335,9 +316,14 @@
         </div>
       </div>
       <div class="field">
-        <label>항목 사진 (선택 — 업무 안내 이미지 등)</label>
-        <label class="file-label">📷 사진 선택<input type="file" accept="image/*" id="newItemPhoto" onchange="previewItemPhoto(this)"></label>
-        <img id="newItemPhotoPreview" class="item-photo-preview hidden" alt="">
+        <label>항목 참고 사진 (선택 — 업무 안내 이미지)</label>
+        <label class="upload-btn" id="newItemPhotoBtn">
+          📷 사진 선택 (Cloudinary 업로드)
+          <input type="file" accept="image/*" onchange="uploadToCloudinary(this,'newItemPhotoUrl','newItemPhotoBtn','newItemPhotoPreview')">
+        </label>
+        <div id="newItemPhotoProgress" class="upload-progress hidden"><div class="upload-spinner"></div> 업로드 중...</div>
+        <img id="newItemPhotoPreview" class="check-photo hidden" style="max-width:100px;margin-top:8px;" alt="">
+        <input type="hidden" id="newItemPhotoUrl">
       </div>
       <div class="field">
         <label>반복 설정</label>
@@ -377,26 +363,26 @@
     </div>
     <div class="card mt16">
       <div class="section-title">데이터 관리</div>
-      <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">모든 체크 기록과 코멘트를 초기화합니다.</p>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">모든 체크 기록과 코멘트를 초기화합니다. (Cloudinary 사진은 유지됩니다)</p>
       <button class="btn btn-danger" onclick="clearAllData()">⚠️ 전체 데이터 초기화</button>
     </div>
   </div>
 
 </div>
 </div>
-
 <div id="toast"></div>
 
 <script>
+// ── CLOUDINARY 설정 ──
+const CLOUD_NAME = 'doljqojoh';
+const UPLOAD_PRESET = 'ml_default';
+
 const STORAGE_KEY = 'checklist_data_v3';
 const DEFAULT_PW = '1234';
 const DAY_NAMES = ['일','월','화','수','목','금','토'];
-const ASSIGN_LABELS = { am:'🌅 오전', pm:'🌇 오후', deadline:'⏰ 마감', weekend:'🗓 주말', etc:'📌 기타' };
+const ASSIGN_LABELS = {am:'🌅 오전',pm:'🌇 오후',deadline:'⏰ 마감',weekend:'🗓 주말',etc:'📌 기타'};
 
-let isAdmin = false;
-let currentDate = todayStr();
-let data = {};
-let editingItemId = null;
+let isAdmin=false, currentDate=todayStr(), data={}, editingItemId=null;
 
 // ── UTILS ──
 function todayStr(){const d=new Date();return`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;}
@@ -404,17 +390,57 @@ function pad(n){return String(n).padStart(2,'0');}
 function formatDisplay(s){const[y,m,d]=s.split('-');return`${y}년 ${m}월 ${d}일 (${DAY_NAMES[new Date(+y,+m-1,+d).getDay()]})`;}
 function getDow(s){const[y,m,d]=s.split('-');return new Date(+y,+m-1,+d).getDay();}
 function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
-function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2500);}
+function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2800);}
+
+// ── CLOUDINARY 업로드 ──
+async function uploadToCloudinary(input, urlFieldId, btnId, previewId) {
+  const file = input.files[0];
+  if (!file) return;
+
+  const btn = document.getElementById(btnId);
+  const progressId = btnId.replace('Btn','Progress');
+  const progressEl = document.getElementById(progressId);
+
+  btn.classList.add('loading');
+  btn.querySelector('span') && (btn.querySelector('span').textContent = '업로드 중...');
+  if(progressEl) progressEl.classList.remove('hidden');
+
+  try {
+    const fd = new FormData();
+    fd.append('file', file);
+    fd.append('upload_preset', UPLOAD_PRESET);
+
+    const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
+      method: 'POST',
+      body: fd
+    });
+    const json = await res.json();
+
+    if (json.secure_url) {
+      document.getElementById(urlFieldId).value = json.secure_url;
+      const preview = document.getElementById(previewId);
+      preview.src = json.secure_url;
+      preview.classList.remove('hidden');
+      toast('📷 사진 업로드 완료!');
+    } else {
+      toast('❌ 업로드 실패: ' + (json.error?.message || '알 수 없는 오류'));
+    }
+  } catch(e) {
+    toast('❌ 업로드 오류: ' + e.message);
+  } finally {
+    btn.classList.remove('loading');
+    if(progressEl) progressEl.classList.add('hidden');
+  }
+}
 
 // ── STORAGE ──
 function loadData(){
   try{data=JSON.parse(localStorage.getItem(STORAGE_KEY))||{};}catch(e){data={};}
-  data.pw=data.pw||DEFAULT_PW; data.items=data.items||[]; data.days=data.days||{};
+  data.pw=data.pw||DEFAULT_PW;data.items=data.items||[];data.days=data.days||{};
 }
 function saveData(){localStorage.setItem(STORAGE_KEY,JSON.stringify(data));}
 function getDay(d){if(!data.days[d])data.days[d]={checks:{},comments:[]};return data.days[d];}
 
-// ── ACTIVE ITEMS ──
 function getActiveItems(dateStr){
   const dow=getDow(dateStr);
   return data.items.filter(item=>{
@@ -426,7 +452,7 @@ function getActiveItems(dateStr){
   });
 }
 
-// ── BADGE HTML ──
+// ── BADGES ──
 function repeatBadge(item){
   const r=item.repeat||'daily';
   if(r==='daily') return`<span class="badge daily">🔁 매일</span>`;
@@ -457,16 +483,9 @@ function enterViewerMode(){
   document.getElementById('loginScreen').classList.add('hidden');showApp();
 }
 function switchMode(){
-  if(isAdmin){
-    isAdmin=false;sessionStorage.setItem('cl_mode','viewer');
-    updateModeUI();renderAll();toast('선생님 모드로 전환됨');
-  }else{
-    document.getElementById('mainApp').classList.add('hidden');
-    document.getElementById('loginScreen').classList.remove('hidden');
-    document.getElementById('pwInput').value='';sessionStorage.removeItem('cl_mode');
-  }
+  if(isAdmin){isAdmin=false;sessionStorage.setItem('cl_mode','viewer');updateModeUI();renderAll();toast('선생님 모드로 전환됨');}
+  else{document.getElementById('mainApp').classList.add('hidden');document.getElementById('loginScreen').classList.remove('hidden');document.getElementById('pwInput').value='';sessionStorage.removeItem('cl_mode');}
 }
-
 function showApp(){document.getElementById('mainApp').classList.remove('hidden');updateModeUI();renderAll();}
 function updateModeUI(){
   const badge=document.getElementById('modeBadge'),btn=document.getElementById('modeBtn');
@@ -479,18 +498,14 @@ function updateModeUI(){
 function showTab(name,btn){
   document.querySelectorAll('.tab-content').forEach(el=>el.classList.add('hidden'));
   document.querySelectorAll('.tab-btn').forEach(el=>el.classList.remove('active'));
-  document.getElementById('tab-'+name).classList.remove('hidden');
-  btn.classList.add('active');
+  document.getElementById('tab-'+name).classList.remove('hidden');btn.classList.add('active');
   if(name==='today') renderToday();
   if(name==='history') renderHistory();
   if(name==='manage') renderAdminItems();
 }
 
 // ── DATE ──
-function changeDate(d){
-  const dt=new Date(currentDate);dt.setDate(dt.getDate()+d);
-  currentDate=`${dt.getFullYear()}-${pad(dt.getMonth()+1)}-${pad(dt.getDate())}`;renderToday();
-}
+function changeDate(d){const dt=new Date(currentDate);dt.setDate(dt.getDate()+d);currentDate=`${dt.getFullYear()}-${pad(dt.getMonth()+1)}-${pad(dt.getDate())}`;renderToday();}
 function goToday(){currentDate=todayStr();renderToday();}
 
 // ── RENDER ──
@@ -517,6 +532,7 @@ function renderChecklist(){
     g.list.forEach(item=>{
       const checked=!!day.checks[item.id];
       if(checked) done++;
+      const checkPhoto=day.checks[item.id+'_photo']||'';
       html+=`
         <div class="check-item ${checked?'done':''}">
           <div class="check-box ${checked?'checked':''}" onclick="toggleCheck('${item.id}')">${checked?'✓':''}</div>
@@ -527,14 +543,14 @@ function renderChecklist(){
               ${repeatBadge(item)}${assignBadge(item)}
               ${checked&&day.checks[item.id+'_time']?`<span class="check-meta">완료 ${day.checks[item.id+'_time']}</span>`:''}
             </div>
-            ${item.photo?`<img src="${item.photo}" class="check-photo" onclick="expandPhoto('${item.id}')" alt="업무 사진">`:''}
-            <!-- 선생님 체크 사진 업로드 -->
+            ${item.photo?`<img src="${item.photo}" class="check-photo" onclick="openPhotoModal('${item.photo}')" alt="참고 사진">`:''}
             <div class="mt8">
-              <label class="file-label" style="font-size:11px;padding:5px 10px;">
-                📷 완료 사진 ${day.checks[item.id+'_photo']?'변경':'첨부'}
+              <label class="upload-btn" id="cpBtn_${item.id}" style="font-size:11px;padding:5px 10px;">
+                📷 완료 사진 ${checkPhoto?'변경':'첨부'} (Cloudinary)
                 <input type="file" accept="image/*" onchange="uploadCheckPhoto(this,'${item.id}')">
               </label>
-              ${day.checks[item.id+'_photo']?`<br><img src="${day.checks[item.id+'_photo']}" class="check-photo" style="margin-top:6px;" onclick="openPhotoModal('${day.checks[item.id+'_photo']}')" alt="완료 사진">`:''}
+              <div id="cpProgress_${item.id}" class="upload-progress hidden"><div class="upload-spinner"></div> 업로드 중...</div>
+              ${checkPhoto?`<img src="${checkPhoto}" class="check-photo" style="margin-top:6px;" onclick="openPhotoModal('${checkPhoto}')" alt="완료 사진">`:''}
             </div>
           </div>
         </div>`;
@@ -583,14 +599,14 @@ function renderHistory(){
           <span style="margin-left:4px;">${assignBadge(item)}</span>
           ${day.checks&&day.checks[item.id+'_time']?`<span style="font-size:10px;color:var(--muted);margin-left:auto;font-family:'DM Mono',monospace;">${day.checks[item.id+'_time']}</span>`:''}
         </div>
-        ${day.checks&&day.checks[item.id+'_photo']?`<div style="margin-left:16px;margin-top:4px;"><img src="${day.checks[item.id+'_photo']}" style="max-width:80px;border-radius:6px;border:1px solid var(--border);" onclick="openPhotoModal('${day.checks[item.id+'_photo']}')" alt=""></div>`:''}
+        ${day.checks&&day.checks[item.id+'_photo']?`<div style="margin-left:16px;margin-top:4px;"><img src="${day.checks[item.id+'_photo']}" style="max-width:80px;border-radius:6px;border:1px solid var(--border);cursor:pointer;" onclick="openPhotoModal('${day.checks[item.id+'_photo']}')" alt=""></div>`:''}
       `).join('')}
       ${(day.comments||[]).map(c=>`
         <div style="margin-left:16px;padding:6px 10px;background:var(--surface2);border-radius:6px;margin-top:4px;font-size:12px;">
           <span style="color:var(--accent2)">${escHtml(c.author)}</span>
           <span style="color:var(--muted)"> · ${c.time}</span><br>
           <span>${escHtml(c.text)}</span>
-          ${c.image?`<br><img src="${c.image}" style="max-width:60px;border-radius:4px;margin-top:4px;cursor:pointer;" onclick="openPhotoModal('${c.image}')" alt="">`:''}
+          ${c.image?`<br><img src="${c.image}" style="max-width:80px;border-radius:4px;margin-top:4px;cursor:pointer;" onclick="openPhotoModal('${c.image}')" alt="">`:''}
         </div>`).join('')}
     </div>`;
   });
@@ -616,11 +632,9 @@ function renderAdminItems(){
           <div style="flex:1;min-width:0;">
             <div style="font-size:14px;font-weight:600;">${escHtml(item.name)}</div>
             ${item.desc?`<div style="font-size:12px;color:var(--muted);margin-top:2px;">📝 ${escHtml(item.desc)}</div>`:''}
-            <div style="margin-top:5px;display:flex;gap:5px;flex-wrap:wrap;">
-              ${repeatBadge(item)}${assignBadge(item)}
-            </div>
+            <div style="margin-top:5px;display:flex;gap:5px;flex-wrap:wrap;">${repeatBadge(item)}${assignBadge(item)}</div>
             ${item.repeat==='weekly'?`<div style="font-size:11px;color:#4d99ff;margin-top:3px;">요일: ${(item.days||[]).sort().map(d=>DAY_NAMES[d]).join(', ')||'없음'}</div>`:''}
-            ${item.photo?`<img src="${item.photo}" style="max-width:80px;border-radius:6px;margin-top:6px;border:1px solid var(--border);" alt="">`:''}
+            ${item.photo?`<img src="${item.photo}" style="max-width:80px;border-radius:6px;margin-top:6px;border:1px solid var(--border);cursor:pointer;" onclick="openPhotoModal('${item.photo}')" alt="">`:''}
           </div>
           <div class="item-actions">
             ${idx>0?`<button class="icon-btn" onclick="moveItem(${idx},-1)">↑</button>`:''}
@@ -634,56 +648,39 @@ function renderAdminItems(){
   el.innerHTML=html;
 }
 
-// ── ASSIGNEE TOGGLE ──
-function toggleAssign(btn){
-  const val=btn.dataset.val;
-  const selClass='sel-'+val;
-  const isSelected=btn.classList.contains(selClass);
-  // single select per group (can select multiple)
-  btn.classList.toggle(selClass,!isSelected);
-}
-
+// ── ASSIGNEE ──
+function toggleAssign(btn){const val=btn.dataset.val;btn.classList.toggle('sel-'+val);}
 function getSelectedAssignees(containerId){
-  return [...document.querySelectorAll(`#${containerId} .assign-chip`)].filter(b=>b.className.includes('sel-')).map(b=>b.dataset.val);
+  return[...document.querySelectorAll(`#${containerId} .assign-chip`)].filter(b=>b.className.includes('sel-')).map(b=>b.dataset.val);
 }
 
 // ── REPEAT UI ──
-function onNewRepeatChange(){
-  const v=document.getElementById('newItemRepeat').value;
-  document.getElementById('newWeekdayPicker').classList.toggle('hidden',v!=='weekly');
-}
+function onNewRepeatChange(){const v=document.getElementById('newItemRepeat').value;document.getElementById('newWeekdayPicker').classList.toggle('hidden',v!=='weekly');}
 document.querySelectorAll('#newDayChips .day-chip').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('selected')));
-
 function getSelectedDaysFrom(id){return[...document.querySelectorAll(`#${id} .day-chip.selected`)].map(c=>+c.dataset.day);}
 
-// ── ITEM PHOTO ──
-function previewItemPhoto(input){
+// ── CHECK PHOTO UPLOAD ──
+async function uploadCheckPhoto(input, itemId){
   const file=input.files[0];if(!file)return;
-  const r=new FileReader();
-  r.onload=e=>{const img=document.getElementById('newItemPhotoPreview');img.src=e.target.result;img.classList.remove('hidden');};
-  r.readAsDataURL(file);
+  const btn=document.getElementById(`cpBtn_${itemId}`);
+  const prog=document.getElementById(`cpProgress_${itemId}`);
+  if(btn)btn.classList.add('loading');
+  if(prog)prog.classList.remove('hidden');
+  try{
+    const fd=new FormData();fd.append('file',file);fd.append('upload_preset',UPLOAD_PRESET);
+    const res=await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,{method:'POST',body:fd});
+    const json=await res.json();
+    if(json.secure_url){
+      const day=getDay(currentDate);
+      day.checks[itemId+'_photo']=json.secure_url;
+      saveData();renderChecklist();toast('📷 완료 사진 저장됨!');
+    }else{toast('❌ 업로드 실패');}
+  }catch(e){toast('❌ 오류: '+e.message);}
+  finally{if(btn)btn.classList.remove('loading');if(prog)prog.classList.add('hidden');}
 }
 
-function uploadCheckPhoto(input,itemId){
-  const file=input.files[0];if(!file)return;
-  const r=new FileReader();
-  r.onload=e=>{
-    const day=getDay(currentDate);
-    day.checks[itemId+'_photo']=e.target.result;
-    saveData();renderChecklist();toast('📷 사진이 저장됐습니다');
-  };
-  r.readAsDataURL(file);
-}
-
-function expandPhoto(itemId){
-  const item=data.items.find(i=>i.id===itemId);
-  if(item&&item.photo) openPhotoModal(item.photo);
-}
-
-function openPhotoModal(src){
-  document.getElementById('photoModalImg').src=src;
-  document.getElementById('photoModal').classList.remove('hidden');
-}
+// ── PHOTO MODAL ──
+function openPhotoModal(src){document.getElementById('photoModalImg').src=src;document.getElementById('photoModal').classList.remove('hidden');}
 
 // ── EDIT MODAL ──
 function openEditModal(id){
@@ -694,12 +691,13 @@ function openEditModal(id){
   document.getElementById('editRepeatSel').value=item.repeat||'daily';
   document.querySelectorAll('#editDayChips .day-chip').forEach(c=>c.classList.toggle('selected',(item.days||[]).includes(+c.dataset.day)));
   document.getElementById('editOnceDate').value=item.startDate||todayStr();
-  // assignee chips
   document.querySelectorAll('#editAssignChips .assign-chip').forEach(b=>{
-    const val=b.dataset.val;
     b.className='assign-chip';
-    if((item.assignee||[]).includes(val)) b.classList.add('sel-'+val);
+    if((item.assignee||[]).includes(b.dataset.val)) b.classList.add('sel-'+b.dataset.val);
   });
+  const prev=document.getElementById('editPhotoPreview');
+  document.getElementById('editItemPhoto').value=item.photo||'';
+  if(item.photo){prev.src=item.photo;prev.classList.remove('hidden');}else{prev.src='';prev.classList.add('hidden');}
   onEditRepeatChange();
   document.getElementById('editModal').classList.remove('hidden');
 }
@@ -717,16 +715,12 @@ function saveEdit(){
   const name=document.getElementById('editName').value.trim();
   if(!name){toast('이름을 입력하세요');return;}
   const repeat=document.getElementById('editRepeatSel').value;
-  if(repeat==='weekly'){
-    const days=getSelectedDaysFrom('editDayChips');
-    if(!days.length){toast('요일을 하나 이상 선택하세요');return;}
-    item.days=days;
-  }
+  if(repeat==='weekly'){const days=getSelectedDaysFrom('editDayChips');if(!days.length){toast('요일을 하나 이상 선택하세요');return;}item.days=days;}
   if(repeat==='once') item.startDate=document.getElementById('editOnceDate').value||todayStr();
-  item.name=name;
-  item.desc=document.getElementById('editDesc').value.trim();
-  item.repeat=repeat;
-  item.assignee=getSelectedAssignees('editAssignChips');
+  item.name=name;item.desc=document.getElementById('editDesc').value.trim();
+  item.repeat=repeat;item.assignee=getSelectedAssignees('editAssignChips');
+  const photoUrl=document.getElementById('editItemPhoto').value;
+  if(photoUrl) item.photo=photoUrl;
   saveData();closeModal();renderAdminItems();renderChecklist();
   toast('✅ 항목이 수정되었습니다');
 }
@@ -746,8 +740,7 @@ function addComment(){
   const text=document.getElementById('commentText').value.trim();
   if(!author){toast('이름을 입력하세요');return;}
   if(!text){toast('내용을 입력하세요');return;}
-  const imgEl=document.getElementById('commentImagePreview');
-  const image=imgEl.classList.contains('hidden')?null:imgEl.src;
+  const image=document.getElementById('commentPhotoUrl').value||null;
   const day=getDay(currentDate);
   if(!day.comments)day.comments=[];
   const now=new Date();
@@ -755,16 +748,15 @@ function addComment(){
   saveData();
   document.getElementById('commentAuthor').value='';
   document.getElementById('commentText').value='';
-  document.getElementById('commentImagePreview').src='';
-  document.getElementById('commentImagePreview').classList.add('hidden');
-  document.getElementById('commentImage').value='';
+  document.getElementById('commentPhotoUrl').value='';
+  document.getElementById('commentPhotoPreview').src='';
+  document.getElementById('commentPhotoPreview').classList.add('hidden');
   renderComments();toast('💬 코멘트가 등록되었습니다');
 }
 
 function deleteComment(idx){
   if(!confirm('이 코멘트를 삭제할까요?'))return;
-  getDay(currentDate).comments.splice(idx,1);
-  saveData();renderComments();toast('삭제됨');
+  getDay(currentDate).comments.splice(idx,1);saveData();renderComments();toast('삭제됨');
 }
 
 function addItem(){
@@ -773,25 +765,19 @@ function addItem(){
   const repeat=document.getElementById('newItemRepeat').value;
   const desc=document.getElementById('newItemDesc').value.trim();
   const assignee=getSelectedAssignees('newAssignChips');
-  const photoEl=document.getElementById('newItemPhotoPreview');
-  const photo=photoEl.classList.contains('hidden')?null:photoEl.src;
+  const photo=document.getElementById('newItemPhotoUrl').value||null;
   const item={id:'item_'+Date.now(),name,desc,assignee,photo,repeat};
-  if(repeat==='weekly'){
-    const days=getSelectedDaysFrom('newDayChips');
-    if(!days.length){toast('반복 요일을 하나 이상 선택하세요');return;}
-    item.days=days;
-  }
+  if(repeat==='weekly'){const days=getSelectedDaysFrom('newDayChips');if(!days.length){toast('반복 요일을 하나 이상 선택하세요');return;}item.days=days;}
   if(repeat==='once') item.startDate=currentDate;
   data.items.push(item);saveData();
   document.getElementById('newItemName').value='';
   document.getElementById('newItemDesc').value='';
+  document.getElementById('newItemPhotoUrl').value='';
   document.getElementById('newItemPhotoPreview').src='';
   document.getElementById('newItemPhotoPreview').classList.add('hidden');
-  document.getElementById('newItemPhoto').value='';
   document.querySelectorAll('#newAssignChips .assign-chip').forEach(b=>b.className='assign-chip');
   document.querySelectorAll('#newDayChips .day-chip').forEach(c=>c.classList.remove('selected'));
-  renderAdminItems();renderChecklist();
-  toast(`✅ 항목 추가됨`);
+  renderAdminItems();renderChecklist();toast('✅ 항목 추가됨');
 }
 
 function deleteItem(id){
@@ -823,12 +809,12 @@ function clearAllData(){
 
 function jumpToDate(d){currentDate=d;document.querySelectorAll('.tab-btn')[0].click();}
 
-function previewCommentImage(input){
-  const file=input.files[0];if(!file)return;
-  const r=new FileReader();
-  r.onload=e=>{const img=document.getElementById('commentImagePreview');img.src=e.target.result;img.classList.remove('hidden');};
-  r.readAsDataURL(file);
-}
+// hidden inputs for cloudinary urls
+document.body.insertAdjacentHTML('beforeend',`
+  <input type="hidden" id="newItemPhotoUrl">
+  <input type="hidden" id="editItemPhoto">
+  <input type="hidden" id="commentPhotoUrl">
+`);
 
 init();
 </script>
